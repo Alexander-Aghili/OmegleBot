@@ -1,7 +1,7 @@
 import pyautogui
 import discord
 from geolite2 import geolite2
-import pynput.mouse
+import pynput
 import socket, subprocess
 import os
 import time
