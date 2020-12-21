@@ -1,0 +1,6 @@
+----- These are your user settings, if you somehow opened this file, please don't edit it unless instructed to----
+Token:
+Directory:
+Input:
+Bounds:std
+UserID:
