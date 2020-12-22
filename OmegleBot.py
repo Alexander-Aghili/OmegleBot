@@ -350,7 +350,7 @@ async def on_message(message):
                                        "User accessed this command, reference command line to issue changes.")
             await client.close()
         else:
-            await message.channel.send("Unauthenicated user attempted to access a command."
+            await message.channel.send("Unauthenticated user attempted to access a command."
                                        " If you are the host, ensure your Discord UserID is set up correctly in ")
     if message.content.lower().startswith(".setup help"):
 
@@ -362,7 +362,7 @@ async def on_message(message):
             await message.channel.send(".setup network")
             await message.channel.send(".setup clicker location")
         else:
-            await message.channel.send("Unauthenicated user attempted to access a command."
+            await message.channel.send("Unauthenticated user attempted to access a command."
                                        " If you are the host, ensure your Discord UserID is set up correctly in "
                                        "settings.txt")
     if message.content.lower().startswith(".setup token"):
@@ -372,7 +372,7 @@ async def on_message(message):
             TOKEN = gettoken()
             sets[1] = "Token:" + TOKEN.strip() + "\n"
         else:
-            await message.channel.send("Unauthenicated user attempted to access a command."
+            await message.channel.send("Unauthenticated user attempted to access a command."
                                        " If you are the host, ensure your Discord UserID is set up correctly in "
                                        "settings.txt")
     if message.content.lower().startswith(".setup wireshark location"):
@@ -381,7 +381,7 @@ async def on_message(message):
                                        "User accessed this command, reference command line to issue changes.")
             sets[2] = "Directory:" + getdir().strip() + "\n"
         else:
-            await message.channel.send("Unauthenicated user attempted to access a command."
+            await message.channel.send("Unauthenticated user attempted to access a command."
                                        " If you are the host, ensure your Discord UserID is set up correctly in "
                                        "settings.txt")
     if message.content.lower().startswith(".setup network"):
@@ -390,7 +390,7 @@ async def on_message(message):
                                        "user accessed this command, reference command line to issue changes.")
             sets[3] = "Input:" + getnetwork().strip() + "\n"
         else:
-            await message.channel.send("Unauthenicated user attempted to access a command."
+            await message.channel.send("Unauthenticated user attempted to access a command."
                                        " If you are the host, ensure your Discord UserID is set up correctly in "
                                        "settings.txt")
     if message.content.lower().startswith(".setup clicker location"):
@@ -412,7 +412,7 @@ async def on_message(message):
                 else:
                     print("Click on the location of the text box.(Where the program will auto click)")
         else:
-            await message.channel.send("Unauthenicated user attempted to access a command."
+            await message.channel.send("Unauthenticated user attempted to access a command."
                                        " If you are the host, ensure your Discord UserID is set up correctly in "
                                        "settings.txt")
 
